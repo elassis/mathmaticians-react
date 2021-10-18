@@ -16,7 +16,7 @@ $ npm install
 ```
 ### Go to project folder
 ```bash
-$ cd ./math
+$ cd ./react-mathematicians
 ```
 ### Run project
 ```bash
