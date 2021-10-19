@@ -1,39 +1,166 @@
-.App {
+* {
+  font-family: 'Arial', Times, serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator-container {
+  width: 310px;
+  height: 311px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+  -moz-box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+  box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 16.6%;
+  margin: 0;
+  padding: 0;
+}
+
+.number {
+  background-color: lightgray;
+}
+
+.button {
+  background-color: orange;
+}
+
+.number,
+.button {
+  width: 25%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(212, 205, 205);
+  cursor: pointer;
+}
+
+.number:active,
+.button:active {
+  transform: scale(0.95);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  padding: 10px 10px 26px 10px;
+  align-items: center;
+  -webkit-box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+  -moz-box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+  box-shadow: 0 0 25px 6px rgba(212, 204, 212, 1);
+}
+
+.hp-text {
+  color: grey;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-page {
+  padding-bottom: 20px;
+  color: orange;
+  text-align: center;
+  margin-top: 9%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hp-container {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active-link {
+  color: orange;
+}
+
+.ul-links {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 10px 20px 10px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  text-decoration: none;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dot {
+  background-color: lightgray;
+}
+
+.zero {
+  width: 158px;
+}
+
+.quote-container {
+  width: 90vw;
+  margin: 60px auto;
+}
+
+.screen {
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  background-color: rgb(154, 159, 167);
+}
+
+.input {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 80%;
+  border: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    flex-direction: row;
+    padding: 20px 10px;
   }
 
-  to {
-    transform: rotate(360deg);
+  .ul-links {
+    padding: 0;
+    width: 40%;
+  }
+
+  .navbar > h1 {
+    width: 60%;
+  }
+
+  .title-page,
+  .hp-text {
+    text-align: left;
+  }
+
+  .container-calculator {
+    width: 70vw;
+    display: flex;
+    margin: 60px auto;
+  }
+
+  .container-calculator > h1 {
+    margin: 0;
+  }
+
+  .quote-container {
+    width: 70vw;
+    margin: 80px auto;
+    font-size: 30px;
   }
 }
