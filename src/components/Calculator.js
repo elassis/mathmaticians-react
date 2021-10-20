@@ -16,10 +16,6 @@ class Calculator extends React.Component {
 
   display(value) {
     const screen = document.querySelector('#screen');
-    let val = value;
-    if (value === 'AC') {
-      val = '';
-    }
     const { total, next, operation } = this.state;
     const obj = {
       total,
@@ -27,7 +23,7 @@ class Calculator extends React.Component {
       operation,
     };
     let objR = {};
-    objR = calculate(obj, val);
+    objR = calculate(obj, value);
     if (objR.total || objR.total === null) {
       obj.total = objR.total;
     }
