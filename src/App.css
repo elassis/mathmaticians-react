@@ -147,6 +147,11 @@ input:focus {
     text-align: left;
   }
 
+  .hp-container {
+    width: 50%;
+    margin: auto;
+  }
+
   .container-calculator {
     width: 70vw;
     display: flex;
