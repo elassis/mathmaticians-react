@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function test(numberOfDisks){
+      const start = 1, inter = 2, goal = 3;
+      let result ='';
+      const hanoi = (numberOfDisks, start, inter, goal)=> { 
+      
+        if(numberOfDisks === 1){
+        result+=move_text(start,goal);
+        return;         
+        }
+
+        hanoi(numberOfDisks - 1, start,goal,inter);
+        result+=move_text(start, goal)
+        hanoi(numberOfDisks - 1, inter, start, goal);
+              
+      }
+
+      const move_text = (start,goal)=>{
+        return `\n${start}->${goal}`;
+      }
+
+     hanoi(numberOfDisks,start,inter,goal);
+
+     return result;
+     
+      
+    }
+
+   console.log(test(2))
+  </script>
+</body>
+</html>
