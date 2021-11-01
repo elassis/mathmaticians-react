@@ -5,6 +5,10 @@
 - Node.js
 - React
 
+## Deployments
+- [Heroku Link](https://elassis-project.herokuapp.com/)
+- [Netlify Link](https://eager-leakey-126e2c.netlify.app/)
+
 ## Setup ✔️
 ### clone repository
 ```bash
